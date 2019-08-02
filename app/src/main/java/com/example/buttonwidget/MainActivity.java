@@ -15,7 +15,6 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity{
     Switch switchme = null;
     private Button btn_msg;
-    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,7 +34,7 @@ public class MainActivity extends AppCompatActivity{
                     });
                 }
                 else{
-                    btn_msg.setVisibility(View.INVISIBLE);
+                    btn_msg.setVisibility(View.GONE);
                 }
             }
         });
